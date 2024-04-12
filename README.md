@@ -10,4 +10,4 @@ This dataset contains the combination of :
 
 It in total has 32 categories with disease of Cashew, Cassava, Maize, Tomato, Rice with each split into training and test(90%/10%)
 
-### Kaggle link: https://www.kaggle.com/code/wolgwang/turingers/
+## Kaggle link: https://www.kaggle.com/code/wolgwang/turingers/
