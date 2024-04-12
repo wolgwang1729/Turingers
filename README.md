@@ -11,3 +11,5 @@ This dataset contains the combination of :
 It in total has 32 categories with disease of Cashew, Cassava, Maize, Tomato, Rice with each split into training and test(90%/10%)
 
 ## Kaggle link: https://www.kaggle.com/code/wolgwang/turingers/
+
+The model has been set for training, and will take some time to train. What we intend to implement is, taking the affected plant image from user through an HTMl form, which is fed as input to the pre-trained model in Flask app, and the output of model (i.e the prediction of disease) is used to to redirect to a special page made for that disease, providing the recommended remedies, and pesticides to save the crop.
