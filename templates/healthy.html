@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+
+{% block title %}Healthy Practices{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = 'healthy.css')}}">
+<script src="{{url_for('static', filename='healthy.js')}}" defer></script>
+{% endblock %}
+
+{% block content %}
+    <section>
+        <h1>
+            Here are some healthy practices that we <u>recommend</u> you to follow!
+        </h1>
+    </section>
+
+    <section> 
+        <p class="animation" id="crop"><b>For Crops</b>
+        </p>
+    </section>
+
+    <section> 
+        <p class="animation" id="crop_1"><b>Crop Rotation:</b> Rotate crops to prevent soil depletion and maintain soil fertility. Different crops have different nutrient needs, and rotating them can help balance soil nutrients.
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="crop_2"><b>Cover Cropping:</b> Plant cover crops during off-seasons to protect the soil from erosion, improve soil health, and suppress weeds.
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="crop_3"><b>Water Management:</b> Implement water-saving irrigation techniques such as drip irrigation and rainwater harvesting to conserve water and reduce water wastage.
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="cattle"><b>For Cattle</b>
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="cattle_1"><b>Proper Nutrition:</b> Provide a balanced diet rich in nutrients, minerals, and vitamins to ensure the health and productivity of cattle. Consult with a veterinarian or animal nutritionist for guidance.
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="cattle_2"><b>Regular Health Check-ups:</b> Schedule regular check-ups with a veterinarian to monitor the health of cattle, vaccinate against diseases, and treat any health issues promptly.
+        </p>
+    </section>
+    <section> 
+        <p class="animation" id="cattle_3"><b>Avoid Overcrowding:</b> Ensure that cattle have enough space to move around freely and avoid overcrowding in sheds or pastures, as this can lead to stress and disease spread.
+        </p>
+    </section>
+{% endblock %}

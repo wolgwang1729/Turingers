@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Cattle Problems{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = 'cattle.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="crop-bg">
+        <img src="{{url_for('static', filename = 'assets/cattle_bg.png')}}" id="cattle-img">
+    </div>
+    <!--Submit button-->
+    <div class="cattle-button">
+        <form action = '/predictcattle' method = 'POST'>
+            <input type="file" name = "cattle-upload" id="cattle-upload">
+            <label for="cattle-upload" id="cattle-label">UPLOAD</label>
+        </form>
+    </div>
+{% endblock %}

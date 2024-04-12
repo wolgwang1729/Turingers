@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %}Crop Problems{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = 'crop.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="crop-bg">
+        <img src="{{url_for('static', filename = 'assets/crop_bg.png')}}" id="crop-img">
+    </div>
+    <!--Submit button-->
+    <div class="crop-button">
+        <form  action = '/predictcrop' method = 'POST'>
+            <input type="file" name = "crop-upload" id="crop-upload">
+            <label for="crop-upload" id="crop-label">FIND CROP DISEASE</label>
+        </form>
+    </div>
+{% endblock %}

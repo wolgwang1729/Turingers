@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}UNNATI{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = 'index.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="cover-img">
+    <img src="{{url_for('static', filename = 'assets/home_bg.png')}}" id="bg-img">
+    </div>
+    <div class="message">
+        <h1 id="one-stop">A One Stop Solution </br>for ALL Your Crop </br>and Cattle Problems</h1>
+    </div>
+    <div class="cover">
+    </div>
+    <!--Marquee line-->
+    <div class="marquee">
+        <div class="text-slide">
+            Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text
+        </div>
+        <div class="text-slide">
+            Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text Random Scrolling text
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}About Us{% endblock %}
+
+{% block style %}
+<link rel="stylesheet" href="{{url_for('static', filename = 'about.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="about">
+    <p class="info">
+        By using UNNATI, we plan to provide an early diagnosis of various crop diseases. The average farmer will greately benefit from UNNATI as it will help save the costs which occur in formal consultation.
+    </p>
+    <p class="us">
+        This project was made by Team Turingers </br>
+        <ul class = 'us1'>
+            <li class = 'us2'>Mayank Yadav, Machine Learing Developer</li>
+            <li class = 'us2'>Kshitij Sinha, Frontend Developer</li>
+            <li class = 'us2'>Neal Saxena, Backend Developer</li>
+            <li class = 'us2'>Nikhil Kumar, Backend Developer</li>
+        </ul>
+    </p>
+</div>
+{% endblock %}

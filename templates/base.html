@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} {% endblock title %}</title>
+    {% block style %} {% endblock %}
+</head>
+<body>
+    <!--Navbar-->
+    <div class="topnav">
+        <a href="/">UNNATI: HOME</a>
+        <a href="/crop">Crop</a>
+        <a href="/cattle">Cattle</a>
+        <a href="/healthy">Healthy Practices</a>
+        <a href="/about">About</a>
+    </div>
+    {% block content %} {% endblock %}
+</body>
+</html>

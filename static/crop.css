@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #006513;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#crop-img{
+    width: 100%;
+    height: auto;
+    filter: blur(2px);
+  }
+
+.crop-button{
+  position: absolute;
+  top: 50%;
+  left: 35%; 
+}
+
+#crop-label{
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  text-transform: uppercase;
+  background: palevioletred;
+  color: antiquewhite;
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 15px 40px;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.35);
+}
+
+label:active{
+  transform: scale(0.92);
+}
+input[type="file"]{
+  display: none;
+}
